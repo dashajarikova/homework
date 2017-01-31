@@ -12,5 +12,3 @@ def hope():
                  result.append(find.group())
         print (result)
 u=hope()
-#'Вот формы слова "пить", которые встретились в тексте '+
-#result.append(find.group())
