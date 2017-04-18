@@ -1,4 +1,4 @@
-$import re
+import re
 import os
 def files_kir():
     files_all =[(f.split('.')[:-1],f) for f in os.listdir('.')]
