@@ -6,7 +6,7 @@ def sents():
     for n in os.listdir(news):
         with open(os.path.join(news, n), encoding='cp1251') as text:
             text = text.read()
-            sent[n] = len(re.findall('(<se>)?(.|\n)+(</se>)?', text))
+            sent[n] = len(re.findall('<se>', text))
 #            print(sent)
     return (sent)
 def new (sent):
